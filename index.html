@@ -1,320 +1,413 @@
-            <!DOCTYPE html>
-            <html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Taller Sin Límites | Trabajo Inclusivo</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Sin Límites | Trabajo Inclusivo</title>
 
-                <!-- Meta etiquetas SEO -->
-                <meta name="description"
-                    content="Creando Juntos: un espacio inclusivo para la creatividad y la diversidad. Talleres adaptados para adultos con síndrome de Down.">
-                <meta name="keywords" content="inclusión, creatividad, síndrome de Down, talleres, arte, diversidad">
-                <meta name="author" content="Creando Juntos">
-                <meta name="robots" content="index, follow">
+    <!-- Meta etiquetas SEO -->
+    <meta name="description"
+        content="Creando Juntos: un espacio inclusivo para la creatividad y la diversidad. Talleres adaptados para adultos con síndrome de Down.">
+    <meta name="keywords" content="inclusión, creatividad, síndrome de Down, talleres, arte, diversidad">
+    <meta name="author" content="Creando Juntos">
+    <meta name="robots" content="index, follow">
 
-                <!-- Favicon -->
-                <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-                <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap" rel="stylesheet">
 
-                <style>
-                    body {
-                        font-family: 'Lexend', sans-serif;
-                        margin: 0;
-                        padding: 0;
-                        background-color: #fdf6f0;
-                        color: #333;
-                        line-height: 1.5;
-                    }
+    <style>
+        body {
+            font-family: 'Lexend', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf6f0;
+            color: #333;
+            line-height: 1.5;
+        }
 
-                    header {
-                        background-color: #a8dadc;
-                        color: #fff;
-                        text-align: center;
-                        padding: 1.5rem;
-                    }
+        header {
+            background-color: #a8dadc;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+        }
 
-                    nav {
-                        display: flex;
-                        justify-content: center;
-                        background-color: #f1faee;
-                        padding: 0.8rem;
-                    }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f1faee;
+            padding: 0.8rem;
+        }
 
-                    nav a {
-                        text-decoration: none;
-                        color: #457b9d;
-                        margin: 0 15px;
-                        font-weight: 600;
-                    }
+        nav a {
+            text-decoration: none;
+            color: #457b9d;
+            margin: 0 15px;
+            font-weight: 600;
+        }
 
-                    nav a:hover {
-                        color: #e63946;
-                    }
+        nav a:hover {
+            color: #e63946;
+        }
 
-                    section {
-                        padding: 2rem;
-                        text-align: center;
-                    }
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
 
-                    .hero {
-                        background-color: #ffe8d6;
-                        padding: 3rem;
-                        border-radius: 10px;
-                        margin: 1rem auto;
-                        max-width: 1250px;
-                    }
+        .hero {
+            background-color: #ffe8d6;
+            padding: 3rem;
+            border-radius: 10px;
+            margin: 1rem auto;
+            max-width: 1250px;
+        }
 
-                    .hero h1 {
-                        font-size: 2.5rem;
-                        color: #6d6875;
-                    }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #6d6875;
+        }
 
-                    .hero p {
-                        font-size: 1.2rem;
-                        color: #444;
-                    }
+        .hero p {
+            font-size: 1.2rem;
+            color: #444;
+        }
 
-                    .services {
-                        display: flex;
-                        justify-content: space-around;
-                        flex-wrap: wrap;
-                        margin-top: 2rem;
-                    }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
 
-                    .service-card {
-                        background-color: #cdb4db;
-                        color: #fff;
-                        padding: 1.5rem;
-                        border-radius: 10px;
-                        width: 250px;
-                        margin: 10px;
-                    }
+        .service-card {
+            background-color: #cdb4db;
+            color: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 250px;
+            margin: 10px;
+        }
 
-                    .service-card.rosa {
-                        background-color: #ffcad4;
-                    }
+        .service-card.rosa {
+            background-color: #ffcad4;
+        }
 
-                    .service-card.celeste {
-                        background-color: #bde0fe;
-                    }
+        .service-card.celeste {
+            background-color: #bde0fe;
+        }
 
-                    footer {
-                        background-color: #a8dadc;
-                        color: #fff;
-                        text-align: center;
-                        padding: 1rem;
-                        margin-top: 2rem;
-                    }
+        footer {
+            background-color: #a8dadc;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
 
-                    /* Pestañas */
-                    .tabs-section {
-                        max-width: 900px;
-                        margin: 2rem auto;
-                        text-align: center;
-                    }
+        /* Pestañas */
+        .tabs-section {
+            max-width: 900px;
+            margin: 2rem auto;
+            text-align: center;
+        }
 
-                    .tabs {
-                        display: flex;
-                        justify-content: center;
-                        margin-bottom: 1rem;
-                    }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
 
-                    .tab-button {
-                        background-color: #bde0fe;
-                        border: none;
-                        padding: 10px 20px;
-                        margin: 0 5px;
-                        cursor: pointer;
-                        font-weight: bold;
-                        border-radius: 5px;
-                        color: #333;
-                        transition: background-color 0.3s ease;
-                    }
+        .tab-button {
+            background-color: #bde0fe;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
 
-                    .tab-button:hover {
-                        background-color: #a8dadc;
-                    }
+        .tab-button:hover {
+            background-color: #a8dadc;
+        }
 
-                    .tab-button.active {
-                        background-color: #cdb4db;
-                        color: #fff;
-                    }
+        .tab-button.active {
+            background-color: #cdb4db;
+            color: #fff;
+        }
 
-                    .tab-content {
-                        display: none;
-                        background-color: #ffe8d6;
-                        padding: 1.5rem;
-                        border-radius: 10px;
-                    }
+        .tab-content {
+            display: none;
+            background-color: #ffe8d6;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
 
-                    .tab-content.active {
-                        display: block;
-                    }
+        .tab-content.active {
+            display: block;
+        }
 
-                    /* Responsive design */
-                    @media (max-width: 768px) {
-                        .services {
-                            flex-direction: column;
-                            align-items: center;
-                        }
-                        
-                        .service-card {
-                            width: 90%;
-                            max-width: 400px;
-                        }
-                        
-                        .hero h1 {
-                            font-size: 2rem;
-                        }
-                        
-                        .hero p {
-                            font-size: 1rem;
-                        }
-                    }
-                </style>
-            </head>
+        /* Cartas informativas inicio */
+        .main-cards-container {
+            padding: 2rem 0 1rem 0;
+            margin: 0 auto;
+            max-width: 1150px;
+            text-align: center;
+        }
+        .main-cards-title {
+            color: #209cee;
+            font-size: 2rem;
+            margin-bottom: 1.2rem;
+        }
+        .cards-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 1.5rem;
+            flex-wrap: nowrap; /* Fuerza una sola línea en desktop */
+        }
+        .info-card {
+            background: #f0f8ff;
+            border: 2px solid #209cee;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(32,154,238,0.07);
+            padding: 1.6rem 1.1rem;
+            min-width: 230px;
+            max-width: 270px;
+            flex: 1 1 230px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.18s, box-shadow 0.18s;
+        }
+        .info-card:hover {
+            transform: translateY(-5px) scale(1.04);
+            box-shadow: 0 6px 22px rgba(32,154,238,0.16);
+        }
+        .info-card h3 {
+            margin-top: 0;
+            color: #209cee;
+            font-size: 1.25rem;
+            margin-bottom: 0.85rem;
+        }
+        .info-card p {
+            color: #333;
+            font-size: 1.08rem;
+            margin: 0;
+            line-height: 1.5;
+        }
+        @media (max-width: 1100px) {
+            .main-cards-container {
+                max-width: 98vw;
+            }
+            .cards-wrapper {
+                gap: 1rem;
+            }
+            .info-card {
+                min-width: 180px;
+                padding: 1.2rem 0.5rem;
+            }
+        }
+        @media (max-width: 900px) {
+            .cards-wrapper {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .info-card {
+                min-width: 230px;
+                max-width: 96vw;
+                margin-bottom: 0.7rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .cards-wrapper {
+                flex-direction: column;
+                gap: 0.7rem;
+                align-items: center;
+            }
+            .info-card {
+                max-width: 97vw;
+                min-width: unset;
+                padding: 1rem 0.7rem;
+            }
+            .main-cards-title {
+                font-size: 1.25rem;
+            }
+        }
+        /* Cartas informativas fin */
+    </style>
+</head>
 
-            <body>
-                <header>
-                    <h1>Taller Sin Límites</h1>
-                    <p>🧩💛 "La inclusión no es un discurso, es una práctica" 🌈🤝</p>
-                    <p>Un espacio inclusivo para la creatividad y la diversidad</p>
-                </header>
+<body>
+    <header>
+        <h1>Taller Sin Límites</h1>
+        <p>🧩💛 "La inclusión no es un discurso, es una práctica" 🌈🤝</p>
+        <p>Un espacio inclusivo para la creatividad y la diversidad</p>
+    </header>
 
-                <nav>
-                    <a href="#inicio">Inicio</a>
-                    <a href="#servicios">Servicios</a>
-                    <a href="#contacto">Contacto</a>
-                </nav>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
 
-                <section class="hero" id="inicio">
-                    <h1>Bienvenido a nuestro taller inclusivo</h1>
-                    <p>La propuesta FORMANDO ACTITUDES, CREANDO INCLUSIÓN busca promover en la comunidad docente y administrativa de
-                        la Universidad EAN una perspectiva inclusiva hacia las personas adultas con síndrome de Down, fortaleciendo
-                        competencias socioemocionales, relacionales y laborales. Se pretende que la diversidad sea reconocida como
-                        una fuente de aprendizaje colectivo y de oportunidades para la empleabilidad.</p>
-                </section>
+    <!-- Sección principal de información en cartas -->
+    <section class="main-cards-container">
+        <h2 class="main-cards-title">Gestión de la Diversidad</h2>
+        <div class="cards-wrapper">
+            <div class="info-card">
+                <h3>🎯 Foco de atención</h3>
+                <p>Gestionar actitudes hacia la diversidad</p>
+            </div>
+            <div class="info-card">
+                <h3>🧬 Variable</h3>
+                <p>Necesidades especiales<br><strong>(personas adultas con síndrome de Down)</strong></p>
+            </div>
+            <div class="info-card">
+                <h3>👥 Población Objetivo</h3>
+                <p>Docentes y personal administrativo de la Universidad EAN</p>
+            </div>
+            <div class="info-card">
+                <h3>📆 Duración</h3>
+                <p>7 semanas</p>
+            </div>
+        </div>
+    </section>
+    <!-- Fin sección principal -->
 
-                <section class="hero" style="background-color: #10d1d82c;">
-                    <h2><em>🌍 🤝❤️ Una Universidad que Abraza la Diversidad 🧩🫶 ✨</em></h2>
-                    <p>Como comunidad universitaria, buscamos promover una cultura inclusiva en la Universidad EAN, trabajando juntos en el diseño e implementación de estrategias psicosociales y pedagógicas que nos permitan fortalecer actitudes positivas, empáticas y conscientes hacia la diversidad funcional. Nuestro propósito es favorecer la participación activa y la inserción laboral de personas adultas con síndrome de Down, reafirmando nuestro compromiso con la equidad, la responsabilidad social y el desarrollo humano.</p>
-                </section>
+    <section class="hero" id="inicio">
+        <h1>Bienvenido a nuestro taller inclusivo</h1>
+        <p>La propuesta FORMANDO ACTITUDES, CREANDO INCLUSIÓN busca promover en la comunidad docente y administrativa de
+            la Universidad EAN una perspectiva inclusiva hacia las personas adultas con síndrome de Down, fortaleciendo
+            competencias socioemocionales, relacionales y laborales. Se pretende que la diversidad sea reconocida como
+            una fuente de aprendizaje colectivo y de oportunidades para la empleabilidad.</p>
+    </section>
 
-            <section id="servicios">
-                <h2>Nuestros Objetivos</h2>
-                <div class="services">
-                    <div class="service-card">
-                        <h3>📚 Impulso de Actitudes Conscientes y Empáticas</h3>
-                        <p>Promover en la comunidad docente y administrativa actitudes empáticas hacia la diversidad funcional, fortaleciendo su capacidad de acompañamiento psicosocial.</p>
-                        </div>
-                        <div class="service-card rosa">
-                            <h3>🧠💛 Fortalecimiento de Competencias Emocionales</h3>
-                            <p>Brindar herramientas para la gestión emocional y relacional frente a la diversidad funcional,
-                                dirigidas tanto a personas adultas con síndrome de Down como a miembros de la comunidad académica de
-                                la Universidad EAN, con el fin de potenciar el acompañamiento psicosocial y la inclusión laboral en
-                                roles significativos dentro de la institución (por ejemplo, en la biblioteca y otras áreas
-                                universitarias).</p>
-                        </div>
-                        <div class="service-card celeste">
-                            <h3>🏢 🤝 🧩 Políticas Universitarias para la Participación 💼 🌍 ✨</h3>
-                            <p>Promover la sensibilización desde un enfoque psicosocial, orientado a la inclusión social de las
-                                personas adultas con síndrome de Down, considerando la perspectiva de la comunidad académica de la
-                                Universidad EAN y fomentando prácticas que reconozcan la diversidad como valor institucional.</p>
-                        </div>
-                        <div class="service-card " style="background-color: #b9d64fc5;">
-                            <h3>📚 Impulso de Actitudes Conscientes y Empáticas en la Universidad 🫶 🤝 🌍 ✨</h3>
-                            <p>Diseñar y promover estrategias institucionales orientadas a garantizar la participación activa y la
-                                inserción laboral de personas adultas con discapacidad neurodivergente, mediante políticas
-                                inclusivas y prácticas que fortalezcan la equidad, la diversidad y la responsabilidad social
-                                universitaria.</p>
-                        </div>
-                        <div class="service-card" style="background-color: #6de0f0;">
-                            <h3>🏢 🤝Construcción de una Cultura Organizacional Inclusiva🫂🧩</h3>
-                            <p>Generar una cultura organizacional fundamentada en la empatía, el respeto y la aceptación de la diversidad, promoviendo prácticas que reconozcan y valoren las diferencias de las personas con discapacidad neurodivergente, como parte del compromiso institucional con la inclusión social y laboral.</p>
-                        </div>
-                    </div>
-                </section>
+    <section class="hero" style="background-color: #10d1d82c;">
+        <h2><em>🌍 🤝❤️ Una Universidad que Abraza la Diversidad 🧩🫶 ✨</em></h2>
+        <p>Como comunidad universitaria, buscamos promover una cultura inclusiva en la Universidad EAN, trabajando juntos en el diseño e implementación de estrategias psicosociales y pedagógicas que nos permitan fortalecer actitudes positivas, empáticas y conscientes hacia la diversidad funcional. Nuestro propósito es favorecer la participación activa y la inserción laboral de personas adultas con síndrome de Down, reafirmando nuestro compromiso con la equidad, la responsabilidad social y el desarrollo humano.</p>
+    </section>
 
-                <!-- Pestañas -->
-                <section class="tabs-section">
-                    <h2>Explora más</h2>
-                    <div class="tabs">
-                        <button class="tab-button active" onclick="openTab(event, 'info')">Información</button>
-                        <button class="tab-button" onclick="openTab(event, 'galeria')">Galería</button>
-                        <button class="tab-button" onclick="openTab(event, 'contactoTab')">Contacto</button>
-                    </div>
+    <section id="servicios">
+        <h2>Nuestros Objetivos</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>📚 Impulso de Actitudes Conscientes y Empáticas</h3>
+                <p>Promover en la comunidad docente y administrativa actitudes empáticas hacia la diversidad funcional, fortaleciendo su capacidad de acompañamiento psicosocial.</p>
+            </div>
+            <div class="service-card rosa">
+                <h3>🧠💛 Fortalecimiento de Competencias Emocionales</h3>
+                <p>Brindar herramientas para la gestión emocional y relacional frente a la diversidad funcional,
+                    dirigidas tanto a personas adultas con síndrome de Down como a miembros de la comunidad académica de
+                    la Universidad EAN, con el fin de potenciar el acompañamiento psicosocial y la inclusión laboral en
+                    roles significativos dentro de la institución (por ejemplo, en la biblioteca y otras áreas
+                    universitarias).</p>
+            </div>
+            <div class="service-card celeste">
+                <h3>🏢 🤝 🧩 Políticas Universitarias para la Participación 💼 🌍 ✨</h3>
+                <p>Promover la sensibilización desde un enfoque psicosocial, orientado a la inclusión social de las
+                    personas adultas con síndrome de Down, considerando la perspectiva de la comunidad académica de la
+                    Universidad EAN y fomentando prácticas que reconozcan la diversidad como valor institucional.</p>
+            </div>
+            <div class="service-card " style="background-color: #b9d64fc5;">
+                <h3>📚 Impulso de Actitudes Conscientes y Empáticas en la Universidad 🫶 🤝 🌍 ✨</h3>
+                <p>Diseñar y promover estrategias institucionales orientadas a garantizar la participación activa y la
+                    inserción laboral de personas adultas con discapacidad neurodivergente, mediante políticas
+                    inclusivas y prácticas que fortalezcan la equidad, la diversidad y la responsabilidad social
+                    universitaria.</p>
+            </div>
+            <div class="service-card" style="background-color: #6de0f0;">
+                <h3>🏢 🤝Construcción de una Cultura Organizacional Inclusiva🫂🧩</h3>
+                <p>Generar una cultura organizacional fundamentada en la empatía, el respeto y la aceptación de la diversidad, promoviendo prácticas que reconozcan y valoren las diferencias de las personas con discapacidad neurodivergente, como parte del compromiso institucional con la inclusión social y laboral.</p>
+            </div>
+        </div>
+    </section>
 
-                    <div id="info" class="tab-content active">
-                        <p>Creando Juntos es un espacio donde la inclusión y la creatividad se unen para generar experiencias
-                            únicas.</p>
-                    </div>
-                    <div id="galeria" class="tab-content">
-                        <p>Pronto podrás ver imágenes de nuestros talleres y actividades.</p>
-                    </div>
-                    <div id="contactoTab" class="tab-content">
-                        <p>Escríbenos a: info@creandojuntos.es o llama al +34 600 123 456.</p>
-                    </div>
-                </section>
+    <!-- Pestañas -->
+    <section class="tabs-section">
+        <h2>Explora más</h2>
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'info')">Información</button>
+            <button class="tab-button" onclick="openTab(event, 'galeria')">Galería</button>
+            <button class="tab-button" onclick="openTab(event, 'contactoTab')">Contacto</button>
+        </div>
 
-                <footer id="contacto">
-                    <p>Contáctanos: info@creandojuntos.es | Tel: +34 600 123 456</p>
-                    <p>&copy; 2025 Creando Juntos</p>
-                </footer>
+        <div id="info" class="tab-content active">
+            <p>Creando Juntos es un espacio donde la inclusión y la creatividad se unen para generar experiencias
+                únicas.</p>
+        </div>
+        <div id="galeria" class="tab-content">
+            <p>Pronto podrás ver imágenes de nuestros talleres y actividades.</p>
+        </div>
+        <div id="contactoTab" class="tab-content">
+            <p>Escríbenos a: info@creandojuntos.es o llama al +34 600 123 456.</p>
+        </div>
+    </section>
 
-                <script>
-                    // Smooth scrolling for navigation links
-                    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-                        anchor.addEventListener('click', function (e) {
-                            e.preventDefault();
-                            const target = document.querySelector(this.getAttribute('href'));
-                            if (target) {
-                                target.scrollIntoView({
-                                    behavior: 'smooth',
-                                    block: 'start'
-                                });
-                            }
-                        });
+    <footer id="contacto">
+        <p>Contáctanos: info@creandojuntos.es | Tel: +34 600 123 456</p>
+        <p>&copy; 2025 Creando Juntos</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
                     });
+                }
+            });
+        });
 
-                    // Add animation to service cards on scroll
-                    const observerOptions = {
-                        threshold: 0.3,
-                        rootMargin: '0px 0px -50px 0px'
-                    };
+        // Add animation to service cards on scroll
+        const observerOptions = {
+            threshold: 0.3,
+            rootMargin: '0px 0px -50px 0px'
+        };
 
-                    const observer = new IntersectionObserver((entries) => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                entry.target.style.opacity = '1';
-                                entry.target.style.transform = 'translateY(0)';
-                            }
-                        });
-                    }, observerOptions);
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
 
-                    // Initialize animations
-                    window.addEventListener('load', () => {
-                        const serviceCards = document.querySelectorAll('.service-card');
-                        serviceCards.forEach(card => {
-                            card.style.opacity = '0';
-                            card.style.transform = 'translateY(30px)';
-                            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                            observer.observe(card);
-                        });
-                    });
+        // Initialize animations
+        window.addEventListener('load', () => {
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
+        });
 
-                    // Tab functionality
-                    function openTab(evt, tabName) {
-                        const contents = document.querySelectorAll('.tab-content');
-                        const buttons = document.querySelectorAll('.tab-button');
+        // Tab functionality
+        function openTab(evt, tabName) {
+            const contents = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.tab-button');
 
-                        contents.forEach(content => content.classList.remove('active'));
-                        buttons.forEach(button => button.classList.remove('active'));
+            contents.forEach(content => content.classList.remove('active'));
+            buttons.forEach(button => button.classList.remove('active'));
 
-                        document.getElementById(tabName).classList.add('active');
-                        evt.currentTarget.classList.add('active');
-                    }
-                </script>
-            </body>
-            </html>
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
