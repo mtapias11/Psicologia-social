@@ -3,69 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Werkstatt Creativa</title>
+    <title>Taller Sin Límites | Trabajo Inclusivo</title>
+
+    <!-- Meta etiquetas SEO -->
+    <meta name="description" content="Creando Juntos: un espacio inclusivo para la creatividad y la diversidad. Talleres adaptados para adultos con síndrome de Down.">
+    <meta name="keywords" content="inclusión, creatividad, síndrome de Down, talleres, arte, diversidad">
+    <meta name="author" content="Creando Juntos">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+   ?family=Lexend:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Lexend', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #fdf6f0;
             color: #333;
+            line-height: 1.5;
         }
+
         header {
-            background-color: #a8dadc; /* azul pastel */
+            background-color: #a8dadc;
             color: #fff;
             text-align: center;
             padding: 1.5rem;
         }
+
         nav {
             display: flex;
             justify-content: center;
-            background-color: #f1faee; /* blanco pastel */
+            background-color: #f1faee;
             padding: 0.8rem;
         }
+
         nav a {
             text-decoration: none;
             color: #457b9d;
             margin: 0 15px;
-            font-weight: bold;
+            font-weight: 600;
         }
+
         nav a:hover {
-            color: #e63946; /* rojo suave */
+            color: #e63946;
         }
+
         section {
             padding: 2rem;
             text-align: center;
         }
+
         .hero {
-            background-color: #ffe8d6; /* crema pastel */
+            background-color: #ffe8d6;
             padding: 3rem;
             border-radius: 10px;
             margin: 1rem auto;
             max-width: 900px;
         }
+
         .hero h1 {
             font-size: 2.5rem;
             color: #6d6875;
         }
+
         .hero p {
             font-size: 1.2rem;
             color: #444;
         }
+
         .services {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             margin-top: 2rem;
         }
+
         .service-card {
-            background-color: #cdb4db; /* lila pastel */
+            background-color: #cdb4db;
             color: #fff;
             padding: 1.5rem;
             border-radius: 10px;
             width: 250px;
             margin: 10px;
         }
+
+        .service-card.rosa {
+            background-color: #ffcad4;
+        }
+
+        .service-card.celeste {
+            background-color: #bde0fe;
+        }
+
         footer {
             background-color: #a8dadc;
             color: #fff;
@@ -73,42 +105,122 @@
             padding: 1rem;
             margin-top: 2rem;
         }
+
+        /* Pestañas */
+        .tabs-section {
+            max-width: 900px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .tab-button {
+            background-color: #bde0fe;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        .tab-button:hover {
+            background-color: #a8dadc;
+        }
+
+        .tab-button.active {
+            background-color: #cdb4db;
+            color: #fff;
+        }
+
+        .tab-content {
+            display: none;
+            background-color: #ffe8d6;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Werkstatt Creativa</h1>
-        <p>Tu espacio para ideas y proyectos únicos</p>
+        <h1>Taller Sin Límitess</h1>
+        <p>Un espacio inclusivo para la creatividad y la diversidad</p>
     </header>
+
     <nav>
-        #inicioInicio</a>
-        #serviciosServicios</a>
+       s</a>
         #contactoContacto</a>
     </nav>
+
     <section class="hero" id="inicio">
-        <h1>Bienvenido a nuestro taller creativo</h1>
-        <p>Un lugar donde la innovación y el diseño se encuentran para dar vida a tus ideas.</p>
+        <h1>Bienvenido a nuestro taller inclusivo</h1>
+        <p>Un lugar donde la creatividad no tiene límites y todos son bienvenidos.</p>
     </section>
+
     <section id="servicios">
         <h2>Nuestros Servicios</h2>
         <div class="services">
             <div class="service-card">
-                <h3>Diseño Personalizado</h3>
-                <p>Creación de piezas únicas adaptadas a tus necesidades.</p>
+                <h3>Arte y Manualidades</h3>
+                <p>Actividades adaptadas para todos los niveles y capacidades.</p>
             </div>
-            <div class="service-card" style="background-color:#ffcad4;">
-                <h3>Reparaciones</h3>
-                <p>Soluciones rápidas y efectivas para tus proyectos.</p>
+            <div class="service-card rosa">
+                <h3>Reparaciones Creativas</h3>
+                <p>Soluciones prácticas y divertidas para tus proyectos.</p>
             </div>
-            <div class="service-card" style="background-color:#bde0fe;">
-                <h3>Consultoría</h3>
-                <p>Asesoramiento experto para tus ideas creativas.</p>
+            <div class="service-card celeste">
+                <h3>Asesoramiento Inclusivo</h3>
+                <p>Te ayudamos a desarrollar tus ideas con apoyo personalizado.</p>
             </div>
         </div>
     </section>
+
+    <!-- Pestañas -->
+    <section class="tabs-section">
+        <h2>Explora más</h2>
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'info')">Información</button>
+            <button class="tab-button" onclick="openTab(event, 'galeria')">Galería</button>
+            <button class="tab-button" onclick="openTab(event, 'contactoTab')">Contacto</button>
+        </div>
+
+        <div id="info" class="tab-content active">
+            <p>Creando Juntos es un espacio donde la inclusión y la creatividad se unen para generar experiencias únicas.</p>
+        </div>
+        <div id="galeria" class="tab-content">
+            <p>Pronto podrás ver imágenes de nuestros talleres y actividades.</p>
+        </div>
+        <div id="contactoTab" class="tab-content">
+            <p>Escríbenos a: info@creandojuntos.es o llama al +34 600 123 456.</p>
+        </div>
+    </section>
+
     <footer id="contacto">
-        <p>Contáctanos: info@werkstattcreativa.es | Tel: +34 600 123 456</p>
-        <p>&copy; 2025 Werkstatt Creativa</p>
+        <p>Contáctanos: info@creandojuntos.es | Tel: +34 600 123 456</p>
+        <p>&copy; 2025 Creando Juntos</p>
     </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            const contents = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.tab-button');
+
+            contents.forEach(content => content.classList.remove('active'));
+            buttons.forEach(button => button.classList.remove('active'));
+
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+    </script>
 </body>
-</html>
