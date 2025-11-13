@@ -83,18 +83,21 @@
             max-width: 1150px;
             text-align: center;
         }
+
         .main-cards-title {
             color: #209cee;
             font-size: 2rem;
             margin-bottom: 1.2rem;
         }
+
         .cards-wrapper {
             display: flex;
             justify-content: center;
             align-items: stretch;
             gap: 1.5rem;
-            flex-wrap: nowrap; /* Fuerza una sola línea en desktop */
+            flex-wrap: nowrap;
         }
+
         .info-card {
             background: #f0f8ff;
             border: 2px solid #209cee;
@@ -110,59 +113,96 @@
             align-items: center;
             transition: transform 0.18s, box-shadow 0.18s;
         }
+
         .info-card:hover {
             transform: translateY(-5px) scale(1.04);
             box-shadow: 0 6px 22px rgba(32,154,238,0.16);
         }
+
         .info-card h3 {
             margin-top: 0;
             color: #209cee;
             font-size: 1.25rem;
             margin-bottom: 0.85rem;
         }
+
         .info-card p {
             color: #333;
             font-size: 1.08rem;
             margin: 0;
             line-height: 1.5;
         }
+
         @media (max-width: 1100px) {
             .main-cards-container {
                 max-width: 98vw;
             }
+
             .cards-wrapper {
                 gap: 1rem;
             }
+
             .info-card {
                 min-width: 180px;
                 padding: 1.2rem 0.5rem;
             }
         }
+
         @media (max-width: 900px) {
             .cards-wrapper {
                 flex-wrap: wrap;
                 justify-content: center;
             }
+
             .info-card {
                 min-width: 230px;
                 max-width: 96vw;
                 margin-bottom: 0.7rem;
             }
         }
+
         @media (max-width: 768px) {
             .cards-wrapper {
                 flex-direction: column;
                 gap: 0.7rem;
                 align-items: center;
             }
+
             .info-card {
                 max-width: 97vw;
                 min-width: unset;
                 padding: 1rem 0.7rem;
             }
+
             .main-cards-title {
                 font-size: 1.25rem;
             }
+        }
+
+        /* Caja de párrafos justificados bien delimitada */
+        .justificacion-box {
+            background: #f069d365;
+            border-left: 6px solid #c520ee59;
+            border-radius: 10px;
+            margin: 1.5rem auto;
+            max-width: 2200px;
+            padding: 1.3rem 2rem;
+            box-shadow: 0 2px 12px rgba(32, 156, 238, 0.06);
+        }
+        .justificacion-box h2 {
+            text-align:center;
+            color:#7706b9e7;
+            margin-top:0;
+        }
+        .justificacion-box p {
+            text-align: justify;
+            margin: 0 0 1.15em 0;
+            font-size: 1.07rem;
+            color: #15425e;
+        }
+        @media (max-width: 700px) {
+            .justificacion-box { padding: 1rem 0.6rem; }
+            .justificacion-box p { font-size: 0.97rem; }
         }
 
         /* Service cards organizadas horizontalmente */
@@ -174,7 +214,7 @@
             gap: 1.2rem;
             overflow-x: auto;
             margin-top: 2rem;
-            padding-bottom: 1rem; /* para mejor scroll horizontal si lo hay */
+            padding-bottom: 1rem;
         }
 
         .service-card {
@@ -193,10 +233,12 @@
             justify-content: flex-start;
             align-items: center;
         }
+
         .service-card:hover {
             transform: translateY(-5px) scale(1.04);
             box-shadow: 0 8px 24px rgba(73, 18, 92, 0.15);
         }
+
         .service-card.rosa {
             background-color: #ffcad4;
         }
@@ -206,9 +248,15 @@
         }
 
         @media (max-width: 1300px) {
-            .service-card { width: 220px; }
-            .services { gap: 0.7rem; }
+            .service-card {
+                width: 220px;
+            }
+
+            .services {
+                gap: 0.7rem;
+            }
         }
+
         @media (max-width: 900px) {
             .services {
                 flex-wrap: wrap;
@@ -216,24 +264,50 @@
                 gap: 1rem;
                 overflow-x: visible;
             }
+
             .service-card {
                 margin-bottom: 1rem;
                 width: 95vw;
                 max-width: 370px;
             }
         }
+
         @media (max-width: 600px) {
             .services {
                 flex-direction: column;
                 gap: 0.7rem;
                 align-items: center;
             }
+
             .service-card {
                 min-width: unset;
                 max-width: 97vw;
                 width: 97vw;
                 padding: 1rem 0.7rem;
             }
+        }
+
+         /* Rainbow Title Style */
+        .rainbow-title span {
+            display: inline-block;
+            font-weight: bold;
+            animation: rainbow-fade 2.5s infinite linear;
+        }
+        .rainbow-title span:nth-child(1) { animation-delay: 0s; }
+        .rainbow-title span:nth-child(2) { animation-delay: 0.2s;}
+        .rainbow-title span:nth-child(3) { animation-delay: 0.4s;}
+        .rainbow-title span:nth-child(4) { animation-delay: 0.6s;}
+        .rainbow-title span:nth-child(5) { animation-delay: 0.8s;}
+        .rainbow-title span:nth-child(6) { animation-delay: 1s;}
+        .rainbow-title span:nth-child(7) { animation-delay: 1.2s;}
+        .rainbow-title span:nth-child(8) { animation-delay: 1.4s;}
+        .rainbow-title span:nth-child(9) { animation-delay: 1.6s;}
+        .rainbow-title span:nth-child(10) { animation-delay: 1.8s;}
+        .rainbow-title span:nth-child(11) { animation-delay: 2s;}
+        .rainbow-title span:nth-child(12) { animation-delay: 2.2s;}
+        @keyframes rainbow-fade {
+            0%,100% { opacity: 1; filter: brightness(1); }
+            50% { opacity: .7; filter: brightness(1.2);}
         }
 
         footer {
@@ -288,7 +362,6 @@
         .tab-content.active {
             display: block;
         }
-
     </style>
 </head>
 
@@ -329,16 +402,29 @@
     </section>
     <!-- Fin sección principal -->
 
-    <section class="hero" id="inicio">
-        <h1>Bienvenido a nuestro taller inclusivo</h1>
-        <p>La propuesta FORMANDO ACTITUDES, CREANDO INCLUSIÓN busca promover en la comunidad docente y administrativa de
-            la Universidad EAN una perspectiva inclusiva hacia las personas adultas con síndrome de Down, fortaleciendo
-            competencias socioemocionales, relacionales y laborales. Se pretende que la diversidad sea reconocida como
-            una fuente de aprendizaje colectivo y de oportunidades para la empleabilidad.</p>
-    </section>
+    <!-- Bloque delimitado y justificado para el mensaje de bienvenida -->
+    <div class="justificacion-box">
+        <h2>Bienvenido a nuestro taller inclusivo</h2>
+        <p>
+            La propuesta <strong>FORMANDO ACTITUDES, CREANDO INCLUSIÓN</strong> busca promover en la comunidad docente y administrativa de la Universidad EAN una perspectiva inclusiva hacia las personas adultas con síndrome de Down, fortaleciendo competencias socioemocionales, relacionales y laborales. Se pretende que la diversidad sea reconocida como una fuente de aprendizaje colectivo y de oportunidades para la empleabilidad.
+        </p>
+    </div>
 
     <section class="hero" style="background-color: #10d1d82c;">
-        <h2><em>🌍 🤝❤️ Una Universidad que Abraza la Diversidad 🧩🫶 ✨</em></h2>
+        <h2 class="rainbow-title">
+  <span style="color: #ff3e3e;">🌍</span>
+  <span style="color: #ff9100;">🤝</span>
+  <span style="color: #ffd600;">❤️</span>
+  <span style="color: #39c700;"> Una</span>
+  <span style="color: #19bffc;"> Universidad</span>
+  <span style="color: #5f4be5;"> que</span>
+  <span style="color: #e040fb;"> Abraza</span>
+  <span style="color: #ff3e3e;"> la</span>
+  <span style="color: #ff9100;"> Diversidad</span>
+  <span style="color: #ffd600;"> 🧩</span>
+  <span style="color: #19bffc;">🫶</span>
+  <span style="color: #5f4be5;"> ✨</span>
+</h2>
         <p>Como comunidad universitaria, buscamos promover una cultura inclusiva en la Universidad EAN, trabajando juntos en el diseño e implementación de estrategias psicosociales y pedagógicas que nos permitan fortalecer actitudes positivas, empáticas y conscientes hacia la diversidad funcional. Nuestro propósito es favorecer la participación activa y la inserción laboral de personas adultas con síndrome de Down, reafirmando nuestro compromiso con la equidad, la responsabilidad social y el desarrollo humano.</p>
     </section>
 
@@ -377,7 +463,34 @@
         </div>
     </section>
 
-    <!-- Pestañas -->
+    <!-- Justificación del Proyecto después de los objetivos, banner horizontal dos columnas y delimitación en caja -->
+    <section class="project-justification">
+        <div class="just-content grid-justification">
+            <div>
+                <h2>Justificación del Proyecto</h2>
+                <div class="justificacion-box">
+                    <p>
+                        Las instituciones educativas y laborales enfrentan barreras actitudinales y estructurales hacia la diversidad funcional. Como señalan <b>Arranz-Sánchez y Espada-Chavarría (2025)</b>, las actitudes del personal docente y administrativo determinan el éxito de las políticas inclusivas.
+                    </p>
+                    <p>
+                        Desde el marco del <b>Diseño Universal para el Aprendizaje (UDL)</b>, <b>Sewell, Kennett y Pugh (2022)</b> proponen construir entornos accesibles desde su diseño, fomentando la autonomía y la participación de todos.
+                    </p>
+                    <p>
+                        Asimismo, el modelo <b>Lebenshilfe Heinsberg</b> demuestra que la inclusión de adultos con discapacidad intelectual requiere acompañamiento emocional, apoyo formativo y reales oportunidades de participación.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="justificacion-box">
+                    <p>
+                        La inserción laboral es un componente esencial de la inclusión social, ya que el trabajo representa para las personas con síndrome de Down dignidad, autonomía y desarrollo personal. Esta propuesta impulsa un cambio institucional profundo, donde la empatía, la comunicación y el respeto garanticen el trato digno y la integración efectiva de adultos con discapacidad en la universidad y el trabajo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin justificación -->
+
     <section class="tabs-section">
         <h2>Explora más</h2>
         <div class="tabs">
