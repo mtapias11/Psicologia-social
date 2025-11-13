@@ -1,308 +1,114 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Bases Biológicas de Procesos Básicos</title>
-    <link href="style.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werkstatt Creativa</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf6f0;
+            color: #333;
+        }
+        header {
+            background-color: #a8dadc; /* azul pastel */
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f1faee; /* blanco pastel */
+            padding: 0.8rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: #457b9d;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #e63946; /* rojo suave */
+        }
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .hero {
+            background-color: #ffe8d6; /* crema pastel */
+            padding: 3rem;
+            border-radius: 10px;
+            margin: 1rem auto;
+            max-width: 900px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #6d6875;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #444;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .service-card {
+            background-color: #cdb4db; /* lila pastel */
+            color: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 250px;
+            margin: 10px;
+        }
+        footer {
+            background-color: #a8dadc;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Banner principal -->
-    <header class="custom-banner">
-        <h1>Bases Biológicas: Sueño, Ingesta y Conducta Sexual</h1>
-        <p class="mb-1"><strong>Autores:</strong> ANA MILENA FLOREZ PALLARES, LUISA FERNANDA ESPINOZA JIMENEZ, GABRIELA
-            RODRÍGUEZ BUSTOS, MARÍA JOSE TAPIAS ORTIZ</p>
-        <p class="mb-0">Universidad EAN - Neurofisiología del Comportamiento</p>
-        <nav>
-            <a class="text-white" href="#Sueño">Sueño</a>
-            <a class="text-white" href="#ingesta">Ingesta</a>
-            <a class="text-white" href="#linea-tiempo">Conducta</a>
-            <a class="text-white" href="#referencias">Referencias</a>
-        </nav>
+    <header>
+        <h1>Werkstatt Creativa</h1>
+        <p>Tu espacio para ideas y proyectos únicos</p>
     </header>
-    <div class="main-container">
-        <main class="content-area">
-            <div class="d-flex flex-wrap justify-content-center align-items-start" style="gap:2rem;">
-                <!-- Línea de tiempo del sueño derecha -->
-                <section id="Sueño">
-                    <h2 class="text-center mb-4">🕒 Línea de Tiempo: Fases del Sueño</h2>
-                    <p>Al dormir, se atraviesa un ciclo de dos fases del sueño: el movimiento ocular rápido (MOR) y el
-                        sueño sin MOR. El ciclo se reinicia cada 80 a 100 minutos. Por lo general, se atraviesan de 4 a
-                        6 ciclos por noche. Es posible que se despierte brevemente entre un ciclo y otro. En los
-                        estudios sobre el sueño se emplean sensores para registrar los movimientos oculares y la
-                        actividad cerebral, y eso se usa para clasificar las fases y etapas del sueño (National Heart,
-                        Lung, and Blood Institute, n.d.).</p>
-                    <div class="timeline">
-                        <article class="timeline-item left">
-                            <img alt="Icono Fase NREM 1" src="imagenes/Gráfico-1.png" />
-                            <div>
-                                <h3>NREM Fase 1</h3>
-                                <p>Conductas: Estado de somnolencia ligera, inicio del sueño.</p>
-                                <p>Actividad neuronal: Disminución del ritmo alfa, aparición de ritmos theta.</p>
-                            </div>
-                        </article>
-                        <article class="timeline-item right">
-                            <img alt="Icono Fase NREM 2" src="imagenes/Gráfico-4.png" />
-                            <div>
-                                <h3>NREM Fase 2</h3>
-                                <p>Conductas: Sueño ligero, preparación para sueño profundo.</p>
-                                <p>Actividad neuronal: Aparición de husos de sueño y complejos K.</p>
-                            </div>
-                        </article>
-                        <article class="timeline-item left">
-                            <img alt="Icono Fase NREM 3" src="imagenes/Gráfico-3.png" />
-                            <div>
-                                <h3>NREM Fase 3 (Sueño Profundo)</h3>
-                                <p>Conductas: Sueño profundo, difícil de despertar.</p>
-                                <p>Actividad neuronal: Ondas delta predominantes.</p>
-                            </div>
-                        </article>
-                        <article class="timeline-item right">
-                            <img alt="Icono Fase REM" src="imagenes/Gráfico-1.png" />
-                            <div>
-                                <h3>REM</h3>
-                                <p>Conductas: Sueño con movimientos oculares rápidos, sueños vívidos.</p>
-                                <p>Actividad neuronal: Actividad cerebral similar a vigilia.</p>
-                            </div>
-                        </article>
-                    </div>
-                </section>
-                <h5>Tarjetas de Memoria</h5>
-                <div aria-controls="ans1" aria-expanded="false" class="memory-card" role="button" tabindex="0">
-                    <div class="question">¿Qué neurotransmisor activa la corteza cerebral especialmente durante REM?
-                    </div>
-                    <div class="answer" hidden="" id="ans1">Acetilcolina</div>
-                </div>
-                <div aria-controls="ans2" aria-expanded="false" class="memory-card" role="button" tabindex="0">
-                    <div class="question">¿Cuál neurotransmisor es excitador y contribuye a la activación cortical
-                        durante REM?</div>
-                    <div class="answer" hidden="" id="ans2">Glutamato</div>
-                </div>
-                <div aria-controls="ans3" aria-expanded="false" class="memory-card" role="button" tabindex="0">
-                    <div class="question">¿Qué neurotransmisor inhibe la actividad neuronal para promover el sueño en
-                        NREM?</div>
-                    <div class="answer" hidden="" id="ans3">GABA</div>
-                </div>
-                <div aria-controls="ans4" aria-expanded="false" class="memory-card" role="button" tabindex="0">
-                    <div class="question">¿Qué neurotransmisor regula el inicio del sueño y la transición entre etapas?
-                    </div>
-                    <div class="answer" hidden="" id="ans4">Serotonina</div>
-                </div>
-                <div aria-controls="ans5" aria-expanded="false" class="memory-card" role="button" tabindex="0">
-                    <div class="question">Neurotransmisores que disminuyen durante REM y aumentan en vigilia</div>
-                    <div class="answer" hidden="" id="ans5">Noradrenalina y dopamina</div>
-                </div>
-                </section>
-                <!-- Ingesta: Mapa conceptual interactivo -->
-                <section aria-label="Sección Ingesta" class="content-section" id="ingesta">
-                    <div class="title-box" style="background: #97e9fd; color: #33769cef;">Ingesta: Bases y Regulación
-                    </div>
-                    <div aria-label="Mapa conceptual de ingesta y regulación de procesos" class="map-container">
-                        <div class="star star1">★</div>
-                        <div class="star star2">★</div>
-                        <div class="star star3">★</div>
-                        <div class="star star4">★</div>
-                        <div class="star star5">★</div>
-                        <div class="star star6">★</div>
-                        <div class="star star7">★</div>
-                        <div aria-label="Columna sobre Privación" class="column">
-                            <div class="title-box" style="background: #D9CCF9; color: #4B339C;">Privación</div>
-                            <div class="star star4">★</div>
-                            <div class="desc-box">La privación activa señales hormonales y neurológicas que provocan
-                                sensación de hambre.</div>
-                            <div class="sub-column" style="background: #E9DEFF;">Hormonas</div>
-                            <div class="sub-desc">Grelina, Orexina, Neuropeptido Y (NPY)</div>
-                            <div class="sub-column" style="background: #E9DEFF;">Ejemplos</div>
-                            <div class="sub-desc">Aumento de grelina en ayuno prolongado.</div>
-                        </div>
-                        <div aria-label="Columna sobre Búsqueda" class="column">
-                            <div class="title-box" style="background: #C5E5A8; color: #2C5E11;">Búsqueda</div>
-                            <div class="desc-box">El cerebro motiva comportamientos para buscar alimento por recompensa
-                                y estímulos externos.</div>
-                            <div class="sub-column" style="background: #DCF3B1;">Sustancias</div>
-                            <div class="star star4">★</div>
-                            <div class="sub-desc">Dopamina (recompensa), Norepinefrina</div>
-                            <div class="star star4">★</div>
-                            <div class="sub-column" style="background: #DCF3B1;">Ejemplos</div>
-                            <div class="sub-desc">Liberación de dopamina al encontrar comida palatable.</div>
-                            <div class="star star6">★</div>
-                        </div>
-                        <div aria-label="Columna sobre Absorción" class="column">
-                            <div class="star star4">★</div>
-                            <div class="title-box" style="background: #F9D5A8; color: #7A5500;">Absorción</div>
-                            <div class="desc-box">Procesos de metabolización y regulación hormonal tras la ingesta de
-                                alimentos.</div>
-                            <div class="sub-column" style="background: #FBE6C3;">Procesos</div>
-                            <div class="sub-desc">Insulina (metabolismo glucémico), Colecistoquinina (CCK)</div>
-                            <div class="sub-column" style="background: #FBE6C3;">Ejemplos</div>
-                            <div class="sub-desc">Liberación de insulina ante aumento glucémico.</div>
-                        </div>
-                        <div aria-label="Columna sobre Saciedad" class="column">
-                            <div class="title-box" style="background: #B7D6D2; color: #0D3B3B;">Saciedad</div>
-                            <div class="desc-box">Sensación de plenitud regulada por señales hormonales y neuroquímicas.
-                            </div>
-                            <div class="sub-column" style="background: #CDE8E6;">Hormonas</div>
-                            <div class="sub-desc">Leptina, Péptido YY, Serotonina</div>
-                            <div class="star star4">★</div>
-                            <div class="sub-column" style="background: #CDE8E6;">Ejemplos</div>
-                            <div class="sub-desc">Aumento de leptina post-ingesta.</div>
-                            <div class="star star7">★</div>
-                        </div>
-                    </div>
-                </section>
+    <nav>
+        #inicioInicio</a>
+        #serviciosServicios</a>
+        #contactoContacto</a>
+    </nav>
+    <section class="hero" id="inicio">
+        <h1>Bienvenido a nuestro taller creativo</h1>
+        <p>Un lugar donde la innovación y el diseño se encuentran para dar vida a tus ideas.</p>
+    </section>
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Diseño Personalizado</h3>
+                <p>Creación de piezas únicas adaptadas a tus necesidades.</p>
             </div>
-        </main>
-
-    <!-- Sidebar con fichas de aprendizaje -->
-    <aside aria-label="Fichas de aprendizaje" class="sidebar">
-        <h5>Fichas de Aprendizaje</h5>
-        <h6>Sueño</h6>
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">Bases del Sueño</h6>
-                <p class="card-text">Fases del sueño, actividades neuronales y fisiológicas, importancia del REM.</p>
+            <div class="service-card" style="background-color:#ffcad4;">
+                <h3>Reparaciones</h3>
+                <p>Soluciones rápidas y efectivas para tus proyectos.</p>
+            </div>
+            <div class="service-card" style="background-color:#bde0fe;">
+                <h3>Consultoría</h3>
+                <p>Asesoramiento experto para tus ideas creativas.</p>
             </div>
         </div>
-        <h6>Ingesta</h6>
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">Sustancias en Ingesta</h6>
-                <p class="card-text">Roles de grelina, leptina, insulina y otros en el control del apetito y saciedad.
-                </p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">Hipotálamo: Centro principal de regulación.</h6>
-                <p class="card-text">Núcleo arqueado: Detecta señales de hambre y saciedad.</p>
-                <p class="card-text">Núcleo ventromedial: Relacionado con la saciedad.</p>
-                <p class="card-text">Núcleo lateral: Estimula el apetito.</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">Neurotransmisores</h6>
-                <p class="card-text">Dopamina: Asociada al placer de comer.</p>
-                <p class="card-text">Serotonina: Relacionada con la saciedad y el estado de ánimo.</p>
-            </div>
-        </div>
-        <h6>Conducta Sexual</h6>
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">Hormonas Sexuales</h6>
-                <p class="card-text">Efectos de estrógenos, progesterona y testosterona en maduración y sistema
-                    nervioso.</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">Hormonas clave:</h6>
-                <p class="card-text">Grelina: Estimula el hambre (secretada por el estómago).</p>
-                <p class="card-text">Leptina: Inhibe el apetito (secretada por tejido adiposo).</p>
-                <p class="card-text">Insulina: Regula niveles de glucosa y tiene efecto sobre el apetito.</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">Factores que influyen</h6>
-                <p class="card-text">Ambientales (disponibilidad de comida, cultura).</p>
-                <p class="card-text">Emocionales (estrés, ansiedad).</p>
-                <p class="card-text">Genéticos (predisposición a obesidad o trastornos alimentarios).</p>
-            </div>
-        </div>
-    </aside>
-    </div>
-    <footer>
-        <div class="container">
-            <p class="mb-1"><strong>Autores:</strong> ANA MILENA FLOREZ PALLARES, LUISA FERNANDA ESPINOZA JIMENEZ,
-                GABRIELA RODRÍGUEZ BUSTOS, MARÍA JOSE TAPIAS ORTIZ</p>
-            <p class="mb-0">Universidad EAN - Neurofisiología del Comportamiento</p>
-        </div>
-    <footer>
-<div class="container">
-<p class="mb-1"><strong>Autores:</strong> ANA MILENA FLOREZ PALLARES, LUISA FERNANDA ESPINOZA JIMENEZ, GABRIELA RODRÍGUEZ BUSTOS, MARÍA JOSE TAPIAS ORTIZ</p>
-<p class="mb-0">Universidad EAN - Neurofisiología del Comportamiento</p>
-</div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-// Interactividad mapa conceptual - mostrar descripción del nodo
-const conceptNodes = document.querySelectorAll('.concept-node');
-const conceptDesc = document.getElementById('concept-desc');
-
-conceptNodes.forEach(node => {
-  node.setAttribute('tabindex', '0'); // accesibilidad
-
-  node.addEventListener('click', () => {
-    // Eliminar clase activa de todos los nodos
-    conceptNodes.forEach(n => n.classList.remove('active-node'));
-
-    // Agregar clase activa al nodo seleccionado
-    node.classList.add('active-node');
-
-    // Mostrar descripción con transición
-    conceptDesc.style.opacity = '0';
-    setTimeout(() => {
-      conceptDesc.textContent = node.getAttribute('data-desc');
-      conceptDesc.style.opacity = '1';
-    }, 200);
-  });
-
-  node.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      node.click();
-    }
-  });
-});
-
-    // Interactividad cards hormona sexual - toggle descripción y aria-expanded
-    const hormoneCards = document.querySelectorAll('.hormone-card');
-
-    hormoneCards.forEach(card => {
-      card.addEventListener('click', () => {
-        const isActive = card.classList.contains('active');
-        hormoneCards.forEach(c => {
-          c.classList.remove('active');
-          c.setAttribute('aria-expanded', 'false');
-        });
-        if (!isActive) {
-          card.classList.add('active');
-          card.setAttribute('aria-expanded', 'true');
-        }
-      });
-      card.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          card.click();
-        }
-      });
-    });
-
-document.querySelectorAll('.memory-card').forEach(card => {
-  card.addEventListener('click', () => {
-    const answer = card.querySelector('.answer');
-    const expanded = card.getAttribute('aria-expanded') === 'true';
-    if (expanded) {
-      answer.hidden = true;
-      card.setAttribute('aria-expanded', 'false');
-    } else {
-      answer.hidden = false;
-      card.setAttribute('aria-expanded', 'true');
-    }
-  });
-  card.addEventListener('keydown', e => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      card.click();
-    }
-  });
-});
-  </script>
+    </section>
+    <footer id="contacto">
+        <p>Contáctanos: info@werkstattcreativa.es | Tel: +34 600 123 456</p>
+        <p>&copy; 2025 Werkstatt Creativa</p>
+    </footer>
 </body>
 </html>
