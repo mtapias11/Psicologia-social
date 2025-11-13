@@ -4,28 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Werkstatt Creativa</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf6f0;
+            color: #333;
+        }
+        header {
+            background-color: #a8dadc; /* azul pastel */
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f1faee; /* blanco pastel */
+            padding: 0.8rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: #457b9d;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #e63946; /* rojo suave */
+        }
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .hero {
+            background-color: #ffe8d6; /* crema pastel */
+            padding: 3rem;
+            border-radius: 10px;
+            margin: 1rem auto;
+            max-width: 900px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #6d6875;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #444;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        .service-card {
+            background-color: #cdb4db; /* lila pastel */
+            color: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 250px;
+            margin: 10px;
+        }
+        footer {
+            background-color: #a8dadc;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
-<bodystatt Creativa</h1>
+<body>
+    <header>
+        <h1>Werkstatt Creativa</h1>
         <p>Tu espacio para ideas y proyectos únicos</p>
     </header>
     <nav>
         #inicioInicio</a>
         #serviciosServicios</a>
-        <a href="#contacto">Contacto</a>
+        #contactoContacto</a>
     </nav>
     <section class="hero" id="inicio">
         <h1>Bienvenido a nuestro taller creativo</h1>
         <p>Un lugar donde la innovación y el diseño se encuentran para dar vida a tus ideas.</p>
     </section>
     <section id="servicios">
-        <                <p>Creación de piezas únicas adaptadas a tus necesidades.</p>
+        <h2>Nuestros Servicios</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Diseño Personalizado</h3>
+                <p>Creación de piezas únicas adaptadas a tus necesidades.</p>
             </div>
-            <div class="service-card rosa">
+            <div class="service-card" style="background-color:#ffcad4;">
                 <h3>Reparaciones</h3>
                 <p>Soluciones rápidas y efectivas para tus proyectos.</p>
             </div>
-            <div class="service-card celeste">
+            <div class="service-card" style="background-color:#bde0fe;">
                 <h3>Consultoría</h3>
                 <p>Asesoramiento experto para tus ideas creativas.</p>
             </div>
