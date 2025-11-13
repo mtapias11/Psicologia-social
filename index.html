@@ -63,7 +63,7 @@
             padding: 3rem;
             border-radius: 10px;
             margin: 1rem auto;
-            max-width: 900px;
+            max-width: 1250px;
         }
 
         .hero h1 {
@@ -151,45 +151,61 @@
 
         .tab-content.active {
             display: block;
-        }
-    </style>
-</head>
 
-<body>
-    <header>
-        <h1>Taller Sin Límites</h1>
-        🧩💛 “La inclusión no es un discurso, es una práctica” 🌈🤝
-        <p>Un espacio inclusivo para la creatividad y la diversidad</p>
-    </header>
+            /* Responsive design */
+            @media (max-width: 768px) {
+                .services {
+                flex-direction: column;
+                align-items: center;
+                }
+                
+                .service-card {
+                width: 90%;
+                max-width: 400px;
+                }
+                
+                .hero h1 {
+                font-size: 2rem;
+                }
+                
+                .hero p {
+                font-size: 1rem;
+                }
+            }
+            </style>
+        </head>
 
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-    <section class="hero" id="inicio">
-        <h1>Bienvenido a nuestro taller inclusivo</h1>
-        <p>La propuesta FORMANDO ACTITUDES, CREANDO INCLUSIÓN busca promover en la comunidad docente y administrativa de
-            la Universidad EAN una perspectiva inclusiva hacia las personas adultas con síndrome de Down, fortaleciendo
-            competencias socioemocionales, relacionales y laborales. Se pretende que la diversidad sea reconocida como
-            una fuente de aprendizaje colectivo y de oportunidades para la empleabilidad. Inspirada en el modelo alemán
-            Lebenshilfe Heinsberg, esta iniciativa plantea la participación y el reconocimiento de las potencialidades
-            laborales y personales de las personas adultas con discapacidad intelectual, desde el acompañamiento
-            psicosocial como herramienta de transformación social. </p>
-    </section>
+        <body>
+            <header>
+            <h1>Taller Sin Límites</h1>
+            🧩💛 "La inclusión no es un discurso, es una práctica" 🌈🤝
+            <p>Un espacio inclusivo para la creatividad y la diversidad</p>
+            </header>
 
-    <section id="servicios">
-        <h2>Nuestros Objetivos</h2>
-        <div class="services">
-            <div class="service-card">
-                <h3>📚 Impulso de Actitudes Conscientes y Empáticas en la Universidad 🫶 🤝 🌍 ✨</h3>
+            <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+            </nav>
+            
+            <section class="hero" id="inicio">
+            <h1>Bienvenido a nuestro taller inclusivo</h1>
+            <p>La propuesta FORMANDO ACTITUDES, CREANDO INCLUSIÓN busca promover en la comunidad docente y administrativa de
+                la Universidad EAN una perspectiva inclusiva hacia las personas adultas con síndrome de Down, fortaleciendo
+                competencias socioemocionales, relacionales y laborales. Se pretende que la diversidad sea reconocida como
+                una fuente de aprendizaje colectivo y de oportunidades para la empleabilidad.</p>
+            </section>
+
+            <section id="servicios">
+            <h2>Nuestros Objetivos</h2>
+            <div class="services">
+                <div class="service-card">
+                <h3>📚 Impulso de Actitudes Conscientes y Empáticas</h3>
                 <p>Fomentar actitudes positivas, empáticas y conscientes en los docentes y administrativos hacia la
-                    diversidad funcional, fortaleciendo su capacidad de acompañamiento psicosocial y apoyo a la
-                    inclusión laboral de personas adultas con síndrome de Down.</p>
-            </div>
-            <div class="service-card rosa">
-                <h3>🧠💛 Fortalecimiento de Competencias Emocionales y Relacionales para la Inclusión🫂🤝
-                    👩‍🎓👨‍🎓</h3>
+                    diversidad funcional, fortaleciendo su capacidad de acompañamiento psicosocial.</p>
+                </div>
+                <div class="service-card rosa">
+                <h3>🧠💛 Fortalecimiento de Competencias Emocionales</h3>
                 <p>Brindar herramientas para la gestión emocional y relacional frente a la diversidad funcional,
                     dirigidas tanto a personas adultas con síndrome de Down como a miembros de la comunidad académica de
                     la Universidad EAN, con el fin de potenciar el acompañamiento psicosocial y la inclusión laboral en
@@ -208,6 +224,11 @@
                     inserción laboral de personas adultas con discapacidad neurodivergente, mediante políticas
                     inclusivas y prácticas que fortalezcan la equidad, la diversidad y la responsabilidad social
                     universitaria.
+            </div>
+            <div class="service-card celeste">
+                <h3>🏢 🤝Construcción de una Cultura Organizacional Inclusiva🫂🧩</h3>
+                <p>Generar una cultura organizacional fundamentada en la empatía, el respeto y la aceptación de la diversidad, promoviendo prácticas que reconozcan y valoren las diferencias de las personas con discapacidad neurodivergente, como parte del compromiso institucional con la inclusión social y laboral.
+. </p>
             </div>
     </section>
 
