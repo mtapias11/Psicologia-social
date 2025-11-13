@@ -76,84 +76,7 @@
             color: #444;
         }
 
-        .services {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-
-        .service-card {
-            background-color: #cdb4db;
-            color: #fff;
-            padding: 1.5rem;
-            border-radius: 10px;
-            width: 250px;
-            margin: 10px;
-        }
-
-        .service-card.rosa {
-            background-color: #ffcad4;
-        }
-
-        .service-card.celeste {
-            background-color: #bde0fe;
-        }
-
-        footer {
-            background-color: #a8dadc;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-
-        /* Pestañas */
-        .tabs-section {
-            max-width: 900px;
-            margin: 2rem auto;
-            text-align: center;
-        }
-
-        .tabs {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 1rem;
-        }
-
-        .tab-button {
-            background-color: #bde0fe;
-            border: none;
-            padding: 10px 20px;
-            margin: 0 5px;
-            cursor: pointer;
-            font-weight: bold;
-            border-radius: 5px;
-            color: #333;
-            transition: background-color 0.3s ease;
-        }
-
-        .tab-button:hover {
-            background-color: #a8dadc;
-        }
-
-        .tab-button.active {
-            background-color: #cdb4db;
-            color: #fff;
-        }
-
-        .tab-content {
-            display: none;
-            background-color: #ffe8d6;
-            padding: 1.5rem;
-            border-radius: 10px;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        /* Cartas informativas inicio */
+        /* Main cards información */
         .main-cards-container {
             padding: 2rem 0 1rem 0;
             margin: 0 auto;
@@ -241,7 +164,131 @@
                 font-size: 1.25rem;
             }
         }
-        /* Cartas informativas fin */
+
+        /* Service cards organizadas horizontalmente */
+        .services {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: stretch;
+            gap: 1.2rem;
+            overflow-x: auto;
+            margin-top: 2rem;
+            padding-bottom: 1rem; /* para mejor scroll horizontal si lo hay */
+        }
+
+        .service-card {
+            background-color: #cdb4db;
+            color: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 240px;
+            min-width: 220px;
+            max-width: 260px;
+            margin: 0;
+            box-sizing: border-box;
+            transition: transform 0.19s, box-shadow 0.17s;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .service-card:hover {
+            transform: translateY(-5px) scale(1.04);
+            box-shadow: 0 8px 24px rgba(73, 18, 92, 0.15);
+        }
+        .service-card.rosa {
+            background-color: #ffcad4;
+        }
+
+        .service-card.celeste {
+            background-color: #bde0fe;
+        }
+
+        @media (max-width: 1300px) {
+            .service-card { width: 220px; }
+            .services { gap: 0.7rem; }
+        }
+        @media (max-width: 900px) {
+            .services {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+                overflow-x: visible;
+            }
+            .service-card {
+                margin-bottom: 1rem;
+                width: 95vw;
+                max-width: 370px;
+            }
+        }
+        @media (max-width: 600px) {
+            .services {
+                flex-direction: column;
+                gap: 0.7rem;
+                align-items: center;
+            }
+            .service-card {
+                min-width: unset;
+                max-width: 97vw;
+                width: 97vw;
+                padding: 1rem 0.7rem;
+            }
+        }
+
+        footer {
+            background-color: #a8dadc;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Pestañas */
+        .tabs-section {
+            max-width: 900px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .tab-button {
+            background-color: #bde0fe;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        .tab-button:hover {
+            background-color: #a8dadc;
+        }
+
+        .tab-button.active {
+            background-color: #cdb4db;
+            color: #fff;
+        }
+
+        .tab-content {
+            display: none;
+            background-color: #ffe8d6;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
     </style>
 </head>
 
@@ -316,7 +363,7 @@
                     personas adultas con síndrome de Down, considerando la perspectiva de la comunidad académica de la
                     Universidad EAN y fomentando prácticas que reconozcan la diversidad como valor institucional.</p>
             </div>
-            <div class="service-card " style="background-color: #b9d64fc5;">
+            <div class="service-card" style="background-color: #b9d64fc5;">
                 <h3>📚 Impulso de Actitudes Conscientes y Empáticas en la Universidad 🫶 🤝 🌍 ✨</h3>
                 <p>Diseñar y promover estrategias institucionales orientadas a garantizar la participación activa y la
                     inserción laboral de personas adultas con discapacidad neurodivergente, mediante políticas
